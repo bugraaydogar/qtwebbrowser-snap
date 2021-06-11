@@ -15,7 +15,7 @@ apps:
     restart-condition: always
     command-chain:
       - env-setup
-    command: usr/local/bin/x11_kiosk_launch $SNAP/usr/local/bin/qtwebbrowser --no-sandbox
+    command: usr/local/bin/x11_kiosk_launch $SNAP/usr/local/bin/qtwebbrowser --no-sandbox http://www.google.com/
     plugs:
       - opengl         # For Mir
       - wayland        # For Mir
